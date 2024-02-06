@@ -1,0 +1,96 @@
+/* Common styles for all screen sizes */
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+  max-height: 450px;
+  min-width: 100px;
+  background-color: #FBF8F1;
+  z-index: 1;
+  border-radius: 15px;
+  color: #3F2E3E;
+  transition: transform 0.3s ease; /* Add transition for smooth zoom effect */
+}
+
+.product:hover {
+  transform: scale(1.05); /* Zoom in by 5% on hover (adjust as needed) */
+}
+
+.product > img {
+  max-height: 240px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 15px;
+  mix-blend-mode: multiply;
+  filter: contrast(1);
+
+}
+
+.product > button {
+  cursor: pointer;
+  background: #F8F0E5;
+  margin-top: 10px;
+  border: none;
+  margin-bottom: 15px;
+  width: 95%;
+  height: 40px;
+  border-radius: 8px;
+}
+.product > button:hover{
+  background-color: #f5e5cd;
+}
+
+.product__info {
+  margin-bottom: 15px;
+}
+
+.product__price {
+  margin-top: 5px;
+}
+
+.product__rating {
+  display: flex;
+}
+
+/* Media Query for Tablet Size (768px and below) */
+@media screen and (max-width: 768px) {
+  .product {
+    padding: 10px;
+  }
+  .product > img {
+    max-height: 150px;
+    margin-bottom: 10px;
+  }
+  .product__rating {
+    display: none;
+  }
+  .product__info {
+    font-size: 14px; /* Adjust font size for tablet screens */
+    line-height: 1.4; /* Adjust line height for tablet screens */
+  }
+}
+
+/* Media Query for Mobile Size (480px and below) */
+@media screen and (max-width: 480px) {
+  .product {
+    padding: 5px;
+    max-height: none;
+  }
+  .product > img {
+    max-height: 120px;
+    margin-bottom: 5px;
+  }
+  .product__price {
+    text-align: center; /* Center the text only on mobile screens */
+    font-size: 12px; /* Adjust font size for mobile screens */
+    line-height: 1.2; /* Adjust line height for mobile screens */
+  }
+  .product__info {
+    font-size: 12px; /* Adjust font size for mobile screens */
+    line-height: 1.2; /* Adjust line height for mobile screens */
+  }
+}

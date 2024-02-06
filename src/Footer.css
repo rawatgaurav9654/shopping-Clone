@@ -1,0 +1,39 @@
+.footer {
+    background-color:  #DAC0A3 ;
+    height: 100%;
+    /* width: 100%; */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-evenly;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .sub {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 50px;
+  }
+  
+
+
+ .footer_icons {
+    margin: 0 5px;
+ }
+
+ .footer-copyright {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+ }
+  
+  /* @media screen and (max-width: 720px) {
+    .sub {
+      flex-direction: column;
+    }
+  } */
+  
